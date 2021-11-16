@@ -41,6 +41,7 @@ class MyStreamListener(tweepy.Stream):
 
 # Create API object
 def main():
+    global api
     api = tweepy.API(auth)
     myStreamListener = MyStreamListener(API_KEY, SECRET_KEY,ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
     myStreamListener.filter(track=['$Dwac'])
