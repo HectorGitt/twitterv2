@@ -1,3 +1,4 @@
+import time
 import tweepy
 # Perform OS Actons
 import os as _os
@@ -30,6 +31,7 @@ class MyStreamListener(tweepy.Stream):
             print(message)
             api.update_status(status=message,in_reply_to_status_id = status.id, auto_populate_reply_metadata=True)
             api.create_favorite(status.id)
+            time.sleep(10)
 
     def on_error(self, status_code):
         if status_code == 420:
