@@ -51,7 +51,7 @@ def main():
     while True:
         print("connecting")
         global api
-        api = tweepy.API(auth)
+        api = tweepy.API(auth, wait_on_rate_limit=True)
         myStreamListener = MyStreamListener(API_KEY, SECRET_KEY,ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
         myStreamListener.filter(track=['$Dwac'])
         print("done")

@@ -59,15 +59,5 @@ def main():
     
 if __name__ == '__main__':
     main()
-    """
-    I am Planning to use the twitter API to target and check the use of a particular keyword on twitter, replying the tweet with a comment that is quoting another tweet relaying to the profile user more and further description about the keyword target
-    
-    
-    The app will only be able to like, and tweet an already defined post under the tweet that the keyword was used in
-    
-    
-    
-    
-    """
     
 
